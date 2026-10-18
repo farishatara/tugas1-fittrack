@@ -36,3 +36,13 @@ public Member(String nama, String noTelepon,
     setTanggalDaftar(tanggalDaftar);
     setJenisPaket(jenisPaket);
 }
+    /**
+ * Membuat member baru dengan paket Basic secara default.
+ *
+ * @param nama nama lengkap member
+ * @param noTelepon nomor telepon aktif
+ * @param tanggalDaftar tanggal bergabung
+ */
+public Member(String nama, String noTelepon, String tanggalDaftar) {
+    this(nama, noTelepon, tanggalDaftar, PAKET_BASIC);
+}
