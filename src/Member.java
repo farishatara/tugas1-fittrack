@@ -18,3 +18,21 @@ public class Member {
     private String noTelepon;
     private String tanggalDaftar;
     private String jenisPaket;
+
+    
+    /**
+ * Membuat member baru dengan mengisi semua atribut
+ * melalui setter agar setiap data divalidasi.
+ *
+ * @param nama nama lengkap member
+ * @param noTelepon nomor telepon aktif
+ * @param tanggalDaftar tanggal bergabung
+ * @param jenisPaket jenis paket keanggotaan
+ */
+public Member(String nama, String noTelepon,
+              String tanggalDaftar, String jenisPaket) {
+    setNama(nama);
+    setNoTelepon(noTelepon);
+    setTanggalDaftar(tanggalDaftar);
+    setJenisPaket(jenisPaket);
+}
