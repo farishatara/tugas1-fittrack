@@ -46,3 +46,19 @@ public Member(String nama, String noTelepon,
 public Member(String nama, String noTelepon, String tanggalDaftar) {
     this(nama, noTelepon, tanggalDaftar, PAKET_BASIC);
 }
+
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        if (nama == null || nama.trim().isEmpty()) {
+            System.out.println("[Penolakan Validasi] Nama gagal diubah: Nama tidak boleh kosong atau hanya berisi spasi.");
+            if (this.nama == null) {
+                this.nama = DEFAULT_NAMA;
+            }
+            return;
+        }
+        this.nama = nama;
+    }
