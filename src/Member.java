@@ -58,7 +58,19 @@ public Member(String nama, String noTelepon, String tanggalDaftar) {
             if (this.nama == null) {
                 this.nama = DEFAULT_NAMA;
             }
+
+            
             return;
         }
         this.nama = nama;
+    }
+
+    public String getNoTelepon() { return noTelepon; }
+    public void setNoTelepon(String noTelepon) {
+        if (noTelepon == null || !noTelepon.startsWith("0") || noTelepon.length() < MIN_PANJANG_TELP) {
+            System.out.println("[Penolakan Validasi] Nomor telepon '" + noTelepon + "' ditolak: Wajib diawali angka 0 dan minimal 10 digit.");
+            if (this.noTelepon == null) { this.noTelepon = DEFAULT_TELP; }
+            return;
+        }
+        this.noTelepon = noTelepon;
     }
