@@ -74,3 +74,14 @@ public Member(String nama, String noTelepon, String tanggalDaftar) {
         }
         this.noTelepon = noTelepon;
     }
+
+
+    public String getJenisPaket() { return jenisPaket; }
+    public void setJenisPaket(String jenisPaket) {
+        if (jenisPaket == null || (!jenisPaket.equals(PAKET_BASIC) && !jenisPaket.equals(PAKET_PREMIUM) && !jenisPaket.equals(PAKET_VIP))) {
+            System.out.println("[Penolakan Validasi] Jenis paket '" + jenisPaket + "' ditolak: Harus berupa Basic, Premium, atau VIP.");
+            if (this.jenisPaket == null) { this.jenisPaket = DEFAULT_PAKET; }
+            return;
+        }
+        this.jenisPaket = jenisPaket;
+    }
