@@ -85,3 +85,13 @@ public Member(String nama, String noTelepon, String tanggalDaftar) {
         }
         this.jenisPaket = jenisPaket;
     }
+
+    public String getTanggalDaftar() { return tanggalDaftar; }
+    public void setTanggalDaftar(String tanggalDaftar) {
+        if (tanggalDaftar == null || tanggalDaftar.trim().isEmpty()) {
+            System.out.println("[Penolakan Validasi] Tanggal daftar tidak boleh kosong.");
+            if (this.tanggalDaftar == null) { this.tanggalDaftar = DEFAULT_TANGGAL; }
+            return;
+        }
+        this.tanggalDaftar = tanggalDaftar;
+    }
