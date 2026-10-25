@@ -95,3 +95,14 @@ public Member(String nama, String noTelepon, String tanggalDaftar) {
         }
         this.tanggalDaftar = tanggalDaftar;
     }
+
+@Override
+    public String toString() {
+        return "Member {" +
+                "Nama = '" + nama + '\'' +
+                ", No Telepon = '" + noTelepon + '\'' +
+                ", Tanggal Daftar = '" + tanggalDaftar + '\'' +
+                ", Jenis Paket = '" + jenisPaket + '\'' +
+                '}';
+    }
+}
