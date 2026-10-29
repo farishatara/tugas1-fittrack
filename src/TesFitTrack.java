@@ -11,3 +11,6 @@ public class TesFitTrack {
      */
     public static void main(String[] args) {
         System.out.println("=== PENGUJIAN SISTEM KEANGGOTAAN GYM FITTRACK ===\n");
+      
+        // 1. Ciptakan minimal 4 objek Member dan simpan dalam satu array
+        Member[] daftarMember = new Member[4];
