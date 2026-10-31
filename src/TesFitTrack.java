@@ -19,3 +19,7 @@ public class TesFitTrack {
         daftarMember[1] = new Member("Siti Rahma", "085698765432", "20-08-2026", "Premium");
         daftarMember[2] = new Member("Budi Santoso", "081122334455", "22-08-2026", "VIP");
         daftarMember[3] = new Member("Dewi Lestari", "089988776655", "25-08-2026"); // Menggunakan constructor tanpa paket
+        
+      // 2. Sengaja memasukkan data yang melanggar aturan validasi saat instansiasi
+        System.out.println("--- Skenario 2: Data Melanggar Validasi ---");
+        Member memberError = new Member("   ", "12345", "26-08-2026", "Gold");
