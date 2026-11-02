@@ -27,3 +27,7 @@ public class TesFitTrack {
          // 3. Menguji setter dengan nilai tidak valid pada objek yang sudah jadi
         System.out.println("\n--- Skenario 3: Uji Setter dengan Nilai Salah ---");
         System.out.println("Nilai awal nomor telepon Andi: " + daftarMember[0].getNoTelepon());
+
+        daftarMember[0].setNoTelepon("12345"); // Ditolak, nilai lama dipertahankan
+        
+        System.out.println("Nilai akhir nomor telepon Andi: " + daftarMember[0].getNoTelepon());
