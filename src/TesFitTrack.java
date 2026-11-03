@@ -31,3 +31,13 @@ public class TesFitTrack {
         daftarMember[0].setNoTelepon("12345"); // Ditolak, nilai lama dipertahankan
         
         System.out.println("Nilai akhir nomor telepon Andi: " + daftarMember[0].getNoTelepon());
+
+        // 4. Mencetak seluruh objek Member dari array menggunakan perulangan for dan toString()
+        System.out.println("\n--- Skenario 4: Cetak Menggunakan Perulangan For ---");
+        for (int i = 0; i < daftarMember.length; i++) {
+            System.out.println("Data ke-" + (i + 1) + ": " + daftarMember[i].toString());
+        }
+        
+        System.out.println("Data Error Terisolasi: " + memberError.toString());
+    }
+}
