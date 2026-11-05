@@ -67,41 +67,10 @@ javac -d out src/*.java
 java -cp out TesFitTrack
 ```
 
-## Contoh Output
 
-```
-=== PENGUJIAN SISTEM KEANGGOTAAN GYM FITTRACK ===
+### Contoh Output
 
---- Skenario 1: Membuat Objek Member dan Menyimpan dalam Array ---
-4 objek Member berhasil dibuat (3 jenis paket berbeda, 1 tanpa paket).
-
---- Skenario 2: Data Melanggar Validasi ---
-[Penolakan Validasi] Nama gagal diubah: Nama tidak boleh kosong atau hanya berisi spasi.
-[Penolakan Validasi] Nomor telepon '12345' ditolak: Wajib diawali angka 0 dan minimal 10 digit.
-[Penolakan Validasi] Jenis paket 'Gold' ditolak: Harus berupa Basic, Premium, atau VIP.
-
---- Skenario 3: Uji Setter dengan Nilai Salah ---
-Nilai awal nomor telepon Andi: 081234567890
-[Penolakan Validasi] Nomor telepon '12345' ditolak: Wajib diawali angka 0 dan minimal 10 digit.
-Nilai akhir nomor telepon Andi: 081234567890
-
---- Skenario 4: Cetak Menggunakan Perulangan For ---
-Data ke-1: Member {Nama = 'Andi Saputra', No Telepon = '081234567890', Tanggal Daftar = '15-08-2026', Jenis Paket = 'Basic'}
-Data ke-2: Member {Nama = 'Siti Rahma', No Telepon = '085698765432', Tanggal Daftar = '20-08-2026', Jenis Paket = 'Premium'}
-Data ke-3: Member {Nama = 'Budi Santoso', No Telepon = '081122334455', Tanggal Daftar = '22-08-2026', Jenis Paket = 'VIP'}
-Data ke-4: Member {Nama = 'Dewi Lestari', No Telepon = '089988776655', Tanggal Daftar = '25-08-2026', Jenis Paket = 'Basic'}
-Data Error Terisolasi: Member {Nama = 'Member Tanpa Nama', No Telepon = '08000000000', Tanggal Daftar = '26-08-2026', Jenis Paket = 'Basic'}
-```
-
-### Screenshot
-
-Skenario normal:
-
-![Output normal](output-normal.png)
-
-Skenario validasi menolak data:
-
-![Output validasi](output-validasi.png)
+![Output normal](output.png)
 
 ## Nilai Default
 
